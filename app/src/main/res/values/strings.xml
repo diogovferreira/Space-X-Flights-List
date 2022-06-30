@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SpaceX</string>
+    <string name="company_info">{companyName} was founded by {founderName} in {year}. It as now {employees},{launch_sites} launch sites, and it is valued at USD{valuation}</string>
+    <string name="label_rocket_name">Rocket:</string>
+    <string name="label_date_time">Date/time</string>
+    <string name="label_mission_name">Mission</string>
+    <string name="label_days">Days:</string>
+    <string name="label_days_since">Days since:</string>
+    <string name="label_days_from">Days from:</string>
+    <string name="apply_button">Apply</string>
+    <string name="success_launch_filter">Success Launch</string>
+    <string name="failed_launch_filter">Failed Launch</string>
+    <string name="years">Years</string>
+    <string name="filters">Filters</string>
+    <string name="dates_ascending">Dates Ascending</string>
+    <string name="dates_descending">Dates Descending</string>
+    <string name="launches_label">LAUNCHES</string>
+    <string name="company_label">COMPANY</string>
+</resources>

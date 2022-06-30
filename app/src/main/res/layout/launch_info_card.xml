@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/mission_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_filter" />
+
+                <LinearLayout
+                    android:id="@+id/labelLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toEndOf="@id/mission_image"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/labelMissionName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/label_mission_name"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/labelDateTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/label_date_time"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/labelRocket"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/label_rocket_name"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/labelDays"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/label_days"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/valuesLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toEndOf="@+id/labelLinearLayout"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/missionName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:text="Apollo" />
+
+                    <TextView
+                        android:id="@+id/missionDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:text="22/12/2021 at 12h00pm" />
+
+                    <TextView
+                        android:id="@+id/rocketName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:text="RocketSpaceX21" />
+
+                    <TextView
+                        android:id="@+id/numberOfDays"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:text="23" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/launch_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintEnd_toStartOf="@+id/linksLinearLayout"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_filter" />
+
+                <LinearLayout
+                    android:id="@+id/linksLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/youtubeImage"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="10dp"
+                        app:srcCompat="@drawable/ic_youtube" />
+
+                    <ImageView
+                        android:id="@+id/wikipediaImage"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:srcCompat="@drawable/ic_wikipedia" />
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
